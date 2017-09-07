@@ -1,2 +1,2 @@
-# nginx
-Coderdale.com's suggested configuration for nginx, running in docker-compose, with Let's Encrypt SSL
+# nginx-certbot-docker
+Docker image for NGINX configured with SSL through Let's Encrypt CA and Certbot
