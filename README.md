@@ -5,3 +5,6 @@ Docker image for NGINX configured with SSL through Let's Encrypt CA
 You gonna wanna do some adjustments to the nginx config file and to the getcert.sh file to refrect your domain name.
 
 You do want to keep your own copy of this privatly. What I do on my productive server is copy this repository (not fork, but copy it) and double maintain a private repository with the configuration I'm using.
+
+# Linux users
+On linux systems you should not use the Docker VM, but use native Kernel support there fore you need to sudo or run as root.

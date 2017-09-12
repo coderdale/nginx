@@ -1,8 +1,5 @@
-#!/bin/sh
-docker run -it --rm \
-      -v `pwd`/certs:/etc/letsencrypt \
-      -v `pwd`/certs-data:/data/letsencrypt \
-      deliverous/certbot \
-      certonly \
-      --webroot --webroot-path=/data/letsencrypt \
-      -d example.com
+sudo docker run --rm  -it \
+ -v "$(pwd)/out":/acme.sh \
+ --net=host \
+ neilpang/a \
+ cme.sh  --issue -d coderdale.com -d www.coderdale.com --standalone
